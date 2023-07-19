@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="new">
+    <h1 >Hi ro </h1>
+    <input type="text" id="fname"><br>
+    <button id="submit">Submit</button>
+</body>
+<script>
+    let bt=document.getElementById('submit')
+    bt.onclick=()=>{
+        let t=document.getElementById('fname');
+     tv=t.value;
+        console.log(tv)
+        let ans=window.localStorage.getItem("itemsJson")
+        console.log(ans)
+        document.getElementById("new").innerHTML=`${ans}`
+
+    }
+</script>
+</html>
